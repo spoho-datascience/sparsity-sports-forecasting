@@ -11,17 +11,25 @@
 5. [Contact Information](#contact-information)
 
 ## Project Structure
-Explanation of the repository structure.
+This repository is structured as follow:
+
+- [input](./input): Data samples and scripts for handling the ingestion of files
+- [models](./models/): Models implementation and utilities, including each of the experiments of the paper.
+- [scripts](./scripts): Tools and utilities for keeping the backend services (db, ingestion, etc.)
+- [tests](./tests): Automated tests
+- [utils](./utils): Utilities folder for some data wrangling, standards and computation utils.
+
+Specifically to the contents of our paper. You can find the code to organize our splits for each of the experiments and training and validation sets [in this file](./input/_save_data_splits.py). Additionally, the Rating-based approach is documented in the models folder: [ratings](./models/rating_models/) and the [evaluation](./models/evaluation/) modules. The LSTM architecture and experiments code is documented in the [deeplearning models](./models/deepmodel/). 
 
 ## Dataset
-Information about datasets and links of the journal challenge.
+This repository documents the solution and paper presented by the team Spoho submission for the 2023 Soccer Prediction Challenge as part of the Special issue "Machine Learning in Soccer" of the Machine Learning Journal. [:link:](https://sites.google.com/view/2023soccerpredictionchallenge/home).
+
+The dataset is included in the documentation of the journal issue. Additionally, we used data from Transfermarkt and footballdata to enrich our data features. The full dataset used in the paper is available at request.
 
 ## License
 This project is licensed under the Apache License 2.0. For more details, you can refer to the full text of the license in the LICENSE file included in this repository.
 
-
 ## Citing
-### Citation Information
 Coming Soon
 
 ## Contact Information
@@ -30,3 +38,5 @@ If you have any questions, suggestions, or issues, please feel free to contact u
 - Dr. Fabian Wunderlich f.wunderlich@dshs-koeln.de
 
 - Dr. Marc Garnica Caparrós m.garnica@dshs-koeln.de
+
+- Dr. Dominik Raabe hello@raabe.ai
